@@ -3,6 +3,6 @@
 We fork the code from [Robustness-Aware-Pruning-ADMM](https://github.com/yeshaokai/Robustness-Aware-Pruning-ADMM) and extend with following additional supports to focus on the non-unform adversarially robust pruning:
 
 1. Extend pruning on channel granularity in `./admm/admm.py`
-2. Add reading function into every `configs.py` in `./ADMM_examples` to fetch a strategy from `strategy.json`
+2. Add reading function into every `configs.py` in `./ADMM_examples` to fetch a strategy from `strategies/$dataset$.json`
 3. Apply non-uniform compression strategy via function `insert_nonuniform_strategy` in every `configs.py` from `./ADMM_examples`.
 4. Add Free-Adversarial-Training in `./ADMM_examples/imagenet/adv_main.py` for ImageNet experiments.
